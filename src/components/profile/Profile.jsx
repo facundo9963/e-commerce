@@ -1,6 +1,6 @@
 import React from 'react';
-
+import { Text} from "react-native";
 
 export const Profile = () => {
-    return <div>Profile</div>
+    return <Text>Profile</Text>
 }
