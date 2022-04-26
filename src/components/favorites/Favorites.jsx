@@ -1,6 +1,6 @@
 import React from 'react';
 
-
+import { Text} from "react-native";
 export const Favorites = () => {
-    return <div>Favorites</div>
+    return <Text>Favorites</Text>
 }
