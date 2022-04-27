@@ -12,9 +12,9 @@ const Tab = createBottomTabNavigator();
 
 const TAB_ICON = {
   Home: "ios-home",
-  Favorites: 'bookmarks',
-  Cart: 'ios-cart',
-  Profile: 'person-circle',
+  Favorites: "bookmarks",
+  Cart: "ios-cart",
+  Profile: "person-circle",
 };
 
 const createScreenOptions = ({ route }) => {
@@ -24,6 +24,7 @@ const createScreenOptions = ({ route }) => {
     tabBarIcon: ({ size, color }) => (
       <Ionicons name={iconName} size={size} color={color} />
     ),
+    headerShown:false,
     tabBarInactiveTintColor: colors.brand.muted,
     tabBarActiveTintColor: colors.brand.primary,
   };
@@ -31,14 +32,8 @@ const createScreenOptions = ({ route }) => {
 
 export const Navigation = () => (
   <NavigationContainer>
-    <Tab.Navigator
-      screenOptions={createScreenOptions}
-    >
-      <Tab.Screen
-        name="Home"
-        component={Home}
-        options={createScreenOptions}
-      />
+    <Tab.Navigator screenOptions={createScreenOptions}>
+      <Tab.Screen name="Home" component={Home} />
       <Tab.Screen name="Cart" component={Cart} />
       <Tab.Screen name="Favorites" component={Favorites} />
       <Tab.Screen name="Profile" component={Profile} />

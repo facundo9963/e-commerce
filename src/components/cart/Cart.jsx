@@ -1,6 +1,15 @@
-import React from 'react';
-import { Text} from "react-native";
+import React from "react";
+import { Text, View } from "react-native";
 
 export const Cart = () => {
-    return <Text>Cart</Text>
-}
+  return (
+    <View style={{
+        flex: 1,
+        backgroundColor: "#f9ed69",
+        justifyContent: "center",
+        alignItems: "center"
+      }}>
+      <Text>Cart</Text>
+    </View>
+  );
+};
