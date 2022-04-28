@@ -1,6 +1,7 @@
 import React from 'react';
-import { Text, View, Alert} from "react-native";
-import { Button } from './styled';
+import {  View} from "react-native";
+import { Product } from '../product/Product';
+
 
 
 
@@ -14,10 +15,7 @@ export const Home = () => {
             justifyContent: "center",
             alignItems: "center"
           }}>
-            <Button onPress={()=> Alert.alert("Estas en el home")}>
-
-            <Text>Home</Text>          
-            </Button>
+            <Product/>
         </View>
       );
 }
